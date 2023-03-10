@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Project_Practice</title>
-<div style="text-align : center;">
-    <img src="Main_Picture.png">
-</div>
+	<title>Project_Practice</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<script src="language.js"></script>
 </head>
+
 <body>
- <h1>안녕하세요! 이 프로그램은 연습용 프로젝트입니다. </h1>   
+	<!--메뉴 시작-->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Dropdown
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<!--메뉴 끝-->
+	<div style="text-align : center;">
+		<img id="Main_img" src="Main_Picture.png">
+	</div>
+	<div id ="title_div">
+		<h1 id="title_1"><script>document.write(title);</script></h1>
+	</div>
+	<div id="card_div">
+		<div class="card" style="width: 18rem;">
+			<img src="First Page.png" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <span class="card-title h5"><script>document.write(card_title_first);</script></span>
+			  <div class="badge">
+				<button type="button" class="btn btn-primary position-relative">
+					<i class="bi bi-chat-heart-fill"></i>
+					<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+					  99+
+					  <span class="visually-hidden">unread messages</span>
+					</span>
+				  </button>
+			  </div>
+			  <p class="card-text"><script>document.write(card_text_first);</script></p>
+			  <a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		  </div>
+
+		  <div class="card" style="width: 18rem;">
+			<img src="Second Page.png" class="card-img-top" alt="...">
+			<div class="card-body">
+				<span class="card-title h5"><script>document.write(card_title_second);</script></span>
+				<div class="badge">
+					<button type="button" class="btn btn-primary position-relative">
+						<i class="bi bi-bookmark-star-fill"></i>
+						<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+						  99+
+						  <span class="visually-hidden">unread messages</span>
+						</span>
+					  </button>
+				  </div>
+			  <p class="card-text"><script>document.write(card_text_second);</script></p>
+			  <a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		  </div>
+
+		  <div class="card" style="width: 18rem;">
+			<img src="Third Page.png" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <span class="card-title h5"><script>document.write(card_title_third);</script></span>
+			  <div class="badge">
+				<button type="button" class="btn btn-primary position-relative">
+					<i class="bi bi-bag-check-fill"></i>
+					<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+					  99+
+					  <span class="visually-hidden">unread messages</span>
+					</span>
+				  </button>
+			  </div>
+			  <p class="card-text"><script>document.write(card_text_third);</script></p>
+			  <a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		  </div>
+	</div>
+	<!--footer시작-->
+	<div id="footer_div">
+		<h4 id="footer_notice_title"><script>document.write(card_text_title);</script></h4>
+		<p id="footer_notice_content"><script>document.write(card_text_notice_content);</script></p>
+		<p id="footer_notice_author"><script>document.write(card_text_notice_author);</script></p>
+	</div>
+	<!--footer 끝-->
+	<!--Script-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

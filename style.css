@@ -1,5 +1,58 @@
-h1{
-    color: white;
-    background: black;
-  
-  } 
+h1 {
+	color: white!important;
+	background-color: black;
+}
+
+#Main_img {
+	width: 100%;
+}
+
+#title_div{
+	margin: 10px;
+}
+
+#title_1 {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#card_div{
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.card-title{
+	float:left;
+	font-weight: bold!important;
+}
+
+.badge{
+	margin-left:10px
+}
+
+.card{
+	float: left;
+	margin: 10px;	
+}
+
+#footer_div{
+	background-color:#c1c0c0;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#footer_notice_title
+{
+	margin-left:50px;
+	font-weight: bold;
+}
+
+#footer_notice_content{
+	margin-left: 50px;
+}
+
+#footer_notice_author{
+	margin-left: 50px;
+}
